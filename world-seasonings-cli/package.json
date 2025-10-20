@@ -1,0 +1,30 @@
+{
+  "name": "world-seasonings-agent-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "example": "node scripts/example-admin-api.js",
+    "start": "node scripts/example-admin-api.js",
+    "dev": "node scripts/example-admin-api.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "cp .env.example .env && echo 'Please edit .env with your Shopify credentials'",
+    "help": "echo 'Available commands: npm run example, npm run setup'"
+  },
+  "keywords": [
+    "shopify",
+    "admin-api",
+    "cli",
+    "agent-tools",
+    "store-management",
+    "private-app"
+  ],
+  "author": "World Seasonings",
+  "license": "ISC",
+  "description": "Private CLI tool for agents to manage World Seasonings store data",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

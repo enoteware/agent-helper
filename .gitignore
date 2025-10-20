@@ -1,0 +1,48 @@
+# Environment files
+.env
+.env.local
+.env.world-seasonings
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Vercel
+.vercel
+
+# Temporary folders
+tmp/
+temp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Shopify CLI
+.shopify/
+
+# Deployment packages
+agent-helper-deploy/
+agent-helper.zip

@@ -1,0 +1,60 @@
+# Shopify App Configuration for Private App Submission
+# This file defines your app for submission to Shopify Partners Dashboard
+
+name: "World Seasonings Agent CLI"
+client_id: "your_client_id_here"
+application_url: "https://your-app-url.com"
+embedded: false
+
+# App Type: Private App
+app_type: "private"
+
+# App Description
+description: "A command-line tool for agents to manage World Seasonings store data including products, orders, customers, and inventory."
+
+# App Category
+category: "tools"
+
+# App Logo (optional)
+# logo: "https://your-app-url.com/logo.png"
+
+# App Screenshots (optional)
+# screenshots:
+#   - "https://your-app-url.com/screenshot1.png"
+#   - "https://your-app-url.com/screenshot2.png"
+
+# Required Scopes for Agent Operations
+scopes:
+  - "write_products"
+  - "read_products"
+  - "write_orders"
+  - "read_orders"
+  - "write_customers"
+  - "read_customers"
+  - "write_inventory"
+  - "read_inventory"
+  - "read_analytics"
+
+# App Features
+features:
+  - "CLI tools for store management"
+  - "Product inventory updates"
+  - "Order status management"
+  - "Customer information updates"
+  - "Automated store operations"
+
+# Support Information
+support_email: "support@worldseasonings.com"
+support_url: "https://worldseasonings.com/support"
+
+# Privacy Policy (required for app store)
+privacy_policy_url: "https://worldseasonings.com/privacy"
+
+# Terms of Service (required for app store)
+terms_of_service_url: "https://worldseasonings.com/terms"
+
+# App Version
+version: "1.0.0"
+
+# Minimum Shopify Plan
+min_shopify_plan: "basic"
