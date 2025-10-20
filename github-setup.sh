@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo "🚀 Setting up GitHub repository for Agent Helper"
+echo "================================================"
+
+echo ""
+echo "📋 Next Steps:"
+echo "1. Go to GitHub.com and create a new repository"
+echo "2. Name it 'agent-helper' (or your preferred name)"
+echo "3. Make it public or private (your choice)"
+echo "4. Don't initialize with README (we already have files)"
+echo ""
+echo "5. After creating the repo, run these commands:"
+echo "   git remote add origin https://github.com/YOUR_USERNAME/agent-helper.git"
+echo "   git branch -M main"
+echo "   git push -u origin main"
+echo ""
+echo "6. Then connect to Vercel:"
+echo "   - Go to vercel.com"
+echo "   - Import your GitHub repository"
+echo "   - Set environment variables:"
+echo "     SHOPIFY_API_KEY=a501dae8bedca0ecfaf8812b5460cd68"
+echo "     SHOPIFY_API_SECRET=your_api_secret_here"
+echo ""
+echo "✅ Repository is ready to push to GitHub!"
+echo ""
+echo "🔗 Current repository status:"
+git status --short
