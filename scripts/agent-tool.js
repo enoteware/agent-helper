@@ -61,7 +61,6 @@ async function getShopInfo() {
           displayName
         }
         currencyCode
-        timezone
       }
     }
   `;
@@ -113,8 +112,8 @@ async function getRecentOrders(limit = 10) {
             name
             email
             totalPrice
-            financialStatus
-            fulfillmentStatus
+            displayFinancialStatus
+            displayFulfillmentStatus
             createdAt
           }
         }
@@ -141,8 +140,7 @@ async function main() {
     console.log(`  URL: ${shop.url}`);
     console.log(`  Email: ${shop.email}`);
     console.log(`  Plan: ${shop.plan.displayName}`);
-    console.log(`  Currency: ${shop.currencyCode}`);
-    console.log(`  Timezone: ${shop.timezone}\n`);
+    console.log(`  Currency: ${shop.currencyCode}\n`);
 
     // Get products
     const products = await getProducts(5);
@@ -163,7 +161,7 @@ async function main() {
       console.log(`  ${index + 1}. ${order.name}`);
       console.log(`     Email: ${order.email}`);
       console.log(`     Total: ${order.totalPrice}`);
-      console.log(`     Status: ${order.financialStatus}/${order.fulfillmentStatus}`);
+      console.log(`     Status: ${order.displayFinancialStatus}/${order.displayFulfillmentStatus}`);
       console.log(`     Date: ${new Date(order.createdAt).toLocaleDateString()}`);
     });
 
