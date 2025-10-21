@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node scripts/agent-tool.js",
     "agent": "node scripts/agent-tool.js",
-    "enhanced": "node scripts/enhanced-agent-tool.js",
     "server": "node simple-oauth-server.js",
     "build": "echo 'No build step required for serverless functions'",
     "vercel-build": "echo 'No build step required for serverless functions'",
